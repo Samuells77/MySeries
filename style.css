@@ -9,6 +9,7 @@ section{
     width: 100%;
     height: auto;
     background: #171717;
+    padding: 1rem 0 1rem;
 }
 
 section nav{
@@ -175,13 +176,12 @@ section nav .right ul li a:hover{
 /* Content */
  h1{
     font-size: 20px;
-    color: #fff;
+    color: #ffe100;
     margin-left: 2.5%;
     margin-bottom: 1%;
 }
 
 .content{
-    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 1rem;
@@ -355,68 +355,154 @@ p.end{
 
 /* Making Responsive - BreakPoints */
 @media (max-width: 1080px) {
-    .section {
-      padding: 3rem 0 2rem;
+    
+    .swiper-slide .image .black h1{
+        top: 50%;
     }
-    .home {
-      margin-top: 4rem !important;
-      min-height: 440px;
+    
+    .swiper-slide .image .black .star{
+        top: 50%;
     }
-    .home img {
-      border-radius: 1rem;
+    
+    .swiper-slide .image .black p{
+        top: 50%;
     }
-    .home-text {
-      padding-right: 0.8rem;
+    
+    .swiper-slide .image .black .genre{
+        top: 50%;
     }
-    .home-text h1 {
-      font-size: 2rem;
+    
+    .swiper-slide .image .black .watch{
+        top: 50%;
     }
-    .content {
-      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    }
+    
   }
   
   /* For Medium Devices */
   @media (max-width: 774px) {
-    .home {
-      min-height: 300px;
+    .content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 1rem;
+        margin-left: 2%;
     }
-    .home-text {
-      padding-right: 0.5rem;
+
+    .content .box .card{
+        width: 240px;
     }
-    .home-text h1 {
-      font-size: 1rem;
+
+    .swiper-slide .image .black h1{
+        top: 40%;
+    }
+    
+    .swiper-slide .image .black .star{
+        top: 40%;
+    }
+    
+    .swiper-slide .image .black p{
+        font-size: 14px;
+        top: 40%;
+    }
+    
+    .swiper-slide .image .black .genre{
+        top: 40%;
+    }
+    
+    .swiper-slide .image .black .watch{
+        top: 40%;
     }
   }
   
   @media (max-width: 560px) {
-    .home {
-      min-height: 240px;
+    .content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 1rem;
+        margin-left: 2%;
     }
-    .home-text {
-      padding-right: 0.5rem;
+
+    .content .box .card{
+        width: 250px;
     }
-    .home-text h1 {
-      font-size: 0.8rem;
+
+    .swiper-slide .image{
+        height: 87vh;
     }
-    .p {
-      font-size: 0.875rem;
+
+    .swiper-slide .image .black h1{
+        font-size: 30px;
+        top: 10%;
+    }
+    
+    .swiper-slide .image .black .star{
+        top: 10%;
+        font-size: 12px;
+    }
+    
+    .swiper-slide .image .black p{
+        font-size: 16px;
+        top: 50%;
+        left: 7%;
+        width: 70%;
+    }
+    
+    .swiper-slide .image .black .genre{
+        margin: 10px 0;
+        font-size: 16px;
+        top: 50%;
+        left: 7%;
+    }
+    
+    .swiper-slide .image .black .watch{
+        top: 50%;
+        left: 7%;
     }
   }
   
   /* For Small Devices */
   @media (max-width: 360px) {
-    .home {
-      min-height: 214px;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .heading .bx {
-      padding: 8px;
+
+    .swiper-slide .image{
+        height: 87vh;
     }
-    .heading h2 {
-      font-size: 1.1rem;
+
+    .swiper-slide .image .black h1{
+        font-size: 30px;
+        top: 10%;
     }
-    .box {
-      height: 420px;
+    
+    .swiper-slide .image .black .star{
+        top: 10%;
+        font-size: 12px;
+    }
+    
+    .swiper-slide .image .black p{
+        font-size: 16px;
+        top: 30%;
+        left: 12%;
+        width: 70%;
+    }
+    
+    .swiper-slide .image .black .genre{
+        margin: 10px 0;
+        font-size: 16px;
+        top: 30%;
+        left: 12%;
+    }
+    
+    .swiper-slide .image .black .watch{
+        top: 30%;
+        left: 12%;
+    }
+
+    .content{
+        margin-left: 15.5%;
     }
   }
   
